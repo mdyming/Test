@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE struts PUBLIC   
+     "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"   
+     "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+
+<struts>
+	<package name="liu" extends="struts-default">
+		<global-results>
+			<result name="succeed">/common/succeed.jsp</result>
+			<result name="msg">/common/msg.jsp</result>
+		</global-results>
+
+		<action name="upload" class="com.util.upload" method="upload">
+			<result name="success">/upload/upload_re.jsp</result>
+		</action>
+
+
+
+
+		<action name="zhuanyeAdd" class="zhuanyeAction"
+			method="zhuanyeAdd">
+		</action>
+		<action name="zhuanyeMana" class="zhuanyeAction"
+			method="zhuanyeMana">
+			<result name="success">/admin/zhuanye/zhuanyeMana.jsp</result>
+		</action>
+		<action name="zhuanyeDel" class="zhuanyeAction"
+			method="zhuanyeDel">
+		</action>
+		<action name="zhuanyeAll" class="zhuanyeAction"
+			method="zhuanyeAll">
+			<result name="success">/admin/zhuanye/zhuanyeAll.jsp</result>
+		</action>
+
+
+
+
+		<action name="xueshengAdd" class="xueshengAction"
+			method="xueshengAdd">
+		</action>
+		<action name="xueshengMana" class="xueshengAction"
+			method="xueshengMana">
+			<result name="success">/admin/xuesheng/xueshengMana.jsp</result>
+		</action>
+		<action name="xueshengDel" class="xueshengAction"
+			method="xueshengDel">
+		</action>
+		<action name="xueshengRes" class="xueshengAction"
+			method="xueshengRes">
+			<result name="success">/admin/xuesheng/xueshengRes.jsp</result>
+		</action>
+		<action name="xueshengEditMe" class="xueshengAction"
+			method="xueshengEditMe">
+		</action>
+
+
+
+
+
+
+		<action name="xuefeiAdd" class="xuefeiAction"
+			method="xuefeiAdd">
+		</action>
+		<action name="xuefeiMana" class="xuefeiAction"
+			method="xuefeiMana">
+			<result name="success">/admin/xuefei/xuefeiMana.jsp</result>
+		</action>
+		<action name="xuefeiDel" class="xuefeiAction"
+			method="xuefeiDel">
+		</action>
+		<action name="xuefeiMine" class="xuefeiAction"
+			method="xuefeiMine">
+			<result name="success">/admin/xuefei/xuefeiMine.jsp</result>
+		</action>
+
+
+
+
+		<action name="tongjiweijiaoRes" class="tongjiAction"
+			method="tongjiweijiaoRes">
+			<result name="success">/admin/tongji/tongjiweijiaoRes.jsp</result>
+		</action>
+		<action name="tongjiyijiaoRes" class="tongjiAction"
+			method="tongjiyijiaoRes">
+			<result name="success">/admin/tongji/tongjiyijiaoRes.jsp</result>
+		</action>
+	</package>
+</struts>
